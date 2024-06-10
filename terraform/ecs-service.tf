@@ -6,7 +6,7 @@ resource "aws_ecs_service" "hello_world" {
 
 
   network_configuration {
-    subnets         = ["subnet-01942ecd801bdd9d6", "subnet-054663795c7db4d40"]
+    subnets_id        = ["subnet-01942ecd801bdd9d6", "subnet-054663795c7db4d40"]
     security_groups = [aws_security_group.node_sg.id]
   }
 
