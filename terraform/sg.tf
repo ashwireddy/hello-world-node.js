@@ -1,7 +1,6 @@
 resource "aws_security_group" "node_sg" {
   vpc_id = "vpc-0fdf12c7f24b737c1"
 
-
   ingress {
     from_port   = 80
     to_port     = 80
