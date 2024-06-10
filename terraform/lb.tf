@@ -25,7 +25,7 @@ resource "aws_lb_target_group" "hello_world_node-tg" {
   }
 }
 
-resource "aws_lb_listener" "hello_world" {
+resource "aws_lb_listener" "hello_world_l" {
   load_balancer_arn = aws_lb.hello_world_lb.arn
   port              = "80"
   protocol          = "HTTP"
