@@ -6,6 +6,7 @@ resource "aws_lb" "hello_world" {
   subnets            = [aws_subnet.public-sub.id]
 
   enable_deletion_protection = false
+  
 
    depends_on = [
     aws_subnet.public-sub,

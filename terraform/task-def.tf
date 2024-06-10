@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "hello_world" {
   container_definitions = jsonencode([
     {
       name      = "hello-world-app"
-      image     = "your-dockerhub-username/hello-world-app:latest"
+      image     = "public.ecr.aws/l5s3g7o5/node-js:latest"
       essential = true
       portMappings = [
         {
